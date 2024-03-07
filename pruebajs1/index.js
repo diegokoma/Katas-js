@@ -8,4 +8,31 @@ for (let i = 0; i < frutas.length; i++) {
     frutasLength[i] = j
   }
 }
-console.log(frutasLength) // [6, 4, 7, 7, 9]
+
+const alumns = [
+  {
+    name: 'Paula',
+    approved: true
+  },
+  {
+    name: 'Alejandro',
+    approved: false
+  },
+  {
+    name: 'David',
+    approved: true
+  },
+  {
+    name: 'Rocío',
+    approved: true
+  }
+]
+let allApproved = true
+
+for (let i = 0; i < alumns.length; i++) {
+  if (alumns[i].approved !== true) {
+    allApproved = false
+  }
+}
+
+console.log(allApproved)
