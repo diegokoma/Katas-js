@@ -6,16 +6,14 @@ function findLongestWord(param) {
   // insert code
 } */
 const avengers = ['Hulk', 'Thor', 'IronMan', 'Captain A.', 'Spiderman', 'Captain M.']
-
 function findLongestWord(word) {
-  let longestWord = '' // Cambia LongestWord a longestWord, utilizando minúsculas para seguir las convenciones de nombres en JavaScript
+  let longestWord = ''
   for (let i = 0; i < word.length; i++) {
-    const currentWord = word[i]
-    if (currentWord.length > longestWord.length) {
-      longestWord = currentWord
+    const myCurrentWord = word[i]
+    if (myCurrentWord.length > longestWord.length) {
+      longestWord = myCurrentWord
     }
   }
-  return longestWord // Asegúrate de devolver el resultado fuera del bucle
+  return longestWord
 }
-
 console.log(findLongestWord(avengers))
